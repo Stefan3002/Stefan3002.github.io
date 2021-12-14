@@ -108,8 +108,13 @@ a:Hover{
     text-align: center;
 }
 /*Footer*/
-#Foot{
-    display: inline;
+#FlexiFooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
 }
 /*Navigation*/
 #Flexi{
