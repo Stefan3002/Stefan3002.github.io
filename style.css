@@ -26,7 +26,7 @@ h1, h2{
     text-align: center;
 }
 h1:hover, h2:hover{
-    color: white;
+    color: #d5b1b1;
     transition: color, .5s;
 }
 h2{
