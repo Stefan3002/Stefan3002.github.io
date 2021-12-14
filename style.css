@@ -2,6 +2,7 @@
 /*font-family: 'Bebas Neue', cursive;*/
 /*font-family: 'Lobster', cursive;*/
 html{
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -33,9 +34,17 @@ h2{
     font-size: 50px;
     font-weight: 100;
 }
+h1{
+    padding-top: 90px;
+}
 a{
     color: #858585;
+    transition: color 2s;
     text-decoration: none;
+}
+a:Hover{
+    color: Black;
+    transition: color .5s;
 }
 .Wrapper{
     width: 85%;
@@ -101,4 +110,21 @@ a{
 /*Footer*/
 #Foot{
     display: inline;
+}
+/*Navigation*/
+#Flexi{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.FlexItem{
+    padding: 0 10px;
+    text-align: center;
+    flex: 1 1 auto;
 }
