@@ -34,6 +34,9 @@ h2{
     font-size: 50px;
     font-weight: 100;
 }
+hr{
+    border: 2px solid black;
+}
 h1{
     padding-top: 90px;
 }
@@ -72,10 +75,14 @@ a:Hover{
     grid-template-rows: 1fr;
     gap: 10px;
 }
-
+.Item p, h3{
+    color: Black;
+}
 .Item{
     transition: background 3s;
     padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
     background: #f3f3f3;
     border-radius: 10px;
     text-align: center;
@@ -117,6 +124,17 @@ a:Hover{
     background: white;
 }
 /*Navigation*/
+#UpArrow{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 100%;
+    transition: opacity 2s;
+}
+#UpArrow:Hover{
+    opacity: 70%;
+    transition: opacity .5s;
+}
 #Flexi{
     display: flex;
     flex-direction: row;
@@ -132,4 +150,47 @@ a:Hover{
     padding: 0 10px;
     text-align: center;
     flex: 1 1 auto;
+}
+/*Pictures*/
+#Images{
+    background: url("Images/Images_Cover.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /*height: 100%;*/
+    /*margin: 10px 0;*/
+}
+.ItemsPictures{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.ItemPic p, h3{
+    color: Black;
+}
+.ItemPic img{
+    filter: grayscale(100%);
+    transition: filter 2s;
+    width: 500px;
+    border: 0;
+    margin: 5px;
+}
+.ItemPic img:Hover{
+    filter: grayscale(1%);
+    transition: filter .5s;
+}
+.ItemPic{
+    /*transition: background 3s;*/
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    /*background: #f3f3f3;*/
+    border-radius: 10px;
+    text-align: center;
+}
+.Item:Hover{
+    background: lightGray;
+    transition: background .5s;
 }
