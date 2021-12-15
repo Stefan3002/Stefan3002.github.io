@@ -199,3 +199,11 @@ a:Hover{
     background: lightGray;
     transition: background .5s;
 }
+@media screen and (max-width: 1000px){
+    #Navig, #Foot{
+        font-size: 35px;
+    }
+    #Intro{
+        padding: 90px;
+    }
+}
