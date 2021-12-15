@@ -150,11 +150,13 @@ a:Hover{
     margin: 0;
     padding: 0;
     background: white;
+    flex-wrap: wrap;
 }
 .FlexItem{
     padding: 0 10px;
     text-align: center;
     flex: 1 1 auto;
+
 }
 /*Pictures*/
 #Images{
@@ -201,7 +203,7 @@ a:Hover{
 }
 @media screen and (max-width: 1000px){
     #Navig, #Foot{
-        font-size: 35px;
+        font-size: 20px;
     }
     #Intro{
         padding: 90px;
