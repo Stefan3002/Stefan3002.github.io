@@ -37,6 +37,9 @@ h2{
 hr{
     border: 2px solid black;
 }
+.InnerHr{
+    border: 2px dashed black;
+}
 h1{
     padding-top: 90px;
 }
