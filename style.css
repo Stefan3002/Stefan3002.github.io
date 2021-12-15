@@ -74,7 +74,7 @@ a:Hover{
     margin: 10px 0;
 }
 .Items{
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr 1.3fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
@@ -201,11 +201,17 @@ a:Hover{
     background: lightGray;
     transition: background .5s;
 }
+/*Responsive Design*/
 @media screen and (max-width: 1000px){
     #Navig, #Foot{
         font-size: 20px;
     }
     #Intro{
         padding: 90px;
+    }
+}
+@media screen and (min-width: 700px){
+    .Items{
+        display: grid;
     }
 }
