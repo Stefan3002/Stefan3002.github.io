@@ -79,6 +79,12 @@ a:Hover{
     grid-template-rows: 1fr;
     gap: 10px;
 }
+.ItemsObjective{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
 .Item p, h3{
     color: Black;
 }
@@ -210,8 +216,8 @@ a:Hover{
         padding: 90px;
     }
 }
-/*@media screen and (min-width: 700px){*/
-/*    .Items{*/
-/*        display: grid;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 700px){
+    .Items{
+        display: inline;
+    }
+}
