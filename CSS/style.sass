@@ -1,0 +1,117 @@
+$Header: 'Kanit', sans-serif
+$Body: 'Josefin Sans', sans-serif
+
+body,html
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+
+.link
+  text-decoration: none
+  color: inherit
+  transition: color 1.5s ease-in-out
+  &:hover, &focus
+    color: gray
+    transition: color .15s ease-out
+
+.smallText
+  font-size: 1.5rem
+.biggerText
+  font-size: 2rem
+body
+  font-family: $Body
+h1,h3,h4,h5,h6
+  font-family: $Header
+  font-weight: 700
+.thick
+  font-weight: 700
+h2
+  font-family: $Header
+  font-weight: 200
+  margin-bottom: 0
+.fa
+  margin: 2rem 0
+
+.container
+  padding: 4rem 0
+//Navigation
+.navigation
+  background: crimson
+  .container
+    padding: 0
+.nav-item,.navbar-brand
+  margin: .5rem .7rem
+.nav-link, .navbar-brand
+  color: white
+.nav-item
+  font-size: 1.2rem
+  font-weight: 200
+.navbar-brand
+  font-weight: 700
+  font-size: 2rem
+  &:hover
+    color: #3a3434
+
+.title
+  text-align: left
+  margin-bottom: 4rem
+
+
+//Header
+.parallaxed
+  .container
+    padding-top: 8.5rem
+.firstTitle
+  font-weight: 200
+.secondTitle
+  font-weight: 900
+  color: red
+  line-height: 5rem
+  font-size: 4rem
+.thirdTitle
+  font-weight: 200
+.typewriter
+  font-weight: 400
+  color: crimson
+.typewriter2
+  font-weight: 400
+  color: black
+header
+  .btn
+    margin: 1.5rem 0
+.parallaxed
+  height: 100%
+  background: url("../Images/BGs/Header.jpg")
+  background-position: top
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+
+//Skills
+#skills
+  .title
+    font-weight: 700
+  color: white
+  background: crimson
+  text-align: center
+
+//Work
+#work
+  text-align: center
+
+//About
+#about
+  h2
+    margin-bottom: 2rem
+  background: crimson
+  color: white
+  .typewriter
+    color: black
+.carousel-item
+  img
+    //height: 40%
+    width: 70%
+    border-radius: 5%
+    object-fit: cover
+
