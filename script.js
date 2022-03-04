@@ -1,3 +1,11 @@
+
+setTimeout(colorNavbar,1000)
+
+function colorNavbar(){
+    const navbar = document.querySelector(".navigation-helper-red")
+    navbar.classList.add("redNavbar")
+}
+
 function TypeWriterHelper() {
     TypeWriterHelperSkills()
     const time = 250

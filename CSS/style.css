@@ -59,8 +59,20 @@ body {
   padding: 4rem 0;
 }
 
-.navigation {
+.redNavbar {
   background: crimson;
+  transition: background 0.5s ease-out;
+}
+
+.container-nav {
+  padding: 0;
+}
+.container-nav .navigation .navbar h2 {
+  margin-left: 0;
+}
+
+.navigation {
+  background: transparent;
 }
 .navigation .container {
   padding: 0;
@@ -94,8 +106,8 @@ body {
   margin-bottom: 4rem;
 }
 
-.parallaxed .container {
-  padding-top: 8.5rem;
+.parallaxed .text-parallaxed {
+  padding-top: 4.5rem;
 }
 
 .secondTitle {

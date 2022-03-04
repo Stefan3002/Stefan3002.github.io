@@ -32,8 +32,19 @@ body
 .container
   padding: 4rem 0
 //Navigation
-.navigation
+
+.redNavbar
   background: crimson
+  transition: background .5s ease-out
+
+.container-nav
+  padding: 0
+  .navigation
+    .navbar
+      h2
+        margin-left: 0
+.navigation
+  background: transparent
   .container
     padding: 0
 .nav-item, .navbar-brand
@@ -58,8 +69,8 @@ body
 
 //Header
 .parallaxed
-  .container
-    padding-top: 8.5rem
+  .text-parallaxed
+    padding-top: 4.5rem
 .secondTitle
   font-weight: 900
   color: red
