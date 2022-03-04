@@ -1,5 +1,7 @@
 $Header: 'Kanit', sans-serif
 $Body: 'Josefin Sans', sans-serif
+html
+  scroll-behavior: smooth
 
 body,html
   height: 100%
@@ -40,7 +42,7 @@ h2
   background: crimson
   .container
     padding: 0
-.nav-item,.navbar-brand
+.nav-item, .navbar-brand
   margin: .5rem .7rem
 .nav-link, .navbar-brand
   color: white
@@ -50,8 +52,10 @@ h2
 .navbar-brand
   font-weight: 700
   font-size: 2rem
+  transition: color 1.5s ease-in-out
   &:hover
     color: #3a3434
+    transition: color .5s ease-out
 
 .title
   text-align: left
@@ -77,6 +81,8 @@ h2
 .typewriter2
   font-weight: 400
   color: black
+.typewriter3
+  font-weight: 200
 header
   .btn
     margin: 1.5rem 0
@@ -95,6 +101,13 @@ header
   color: white
   background: crimson
   text-align: center
+.element
+  background: crimson
+  transition: background .5s ease-in-out
+.element-active
+  background: red
+  border-radius: 5%
+  transition: background 1s ease-out
 
 //Work
 #work

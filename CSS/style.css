@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   height: 100%;
   width: 100%;
@@ -73,9 +77,11 @@ h2 {
 .navbar-brand {
   font-weight: 700;
   font-size: 2rem;
+  transition: color 1.5s ease-in-out;
 }
 .navbar-brand:hover {
   color: #3a3434;
+  transition: color 0.5s ease-out;
 }
 
 .title {
@@ -112,6 +118,10 @@ h2 {
   color: black;
 }
 
+.typewriter3 {
+  font-weight: 200;
+}
+
 header .btn {
   margin: 1.5rem 0;
 }
@@ -132,6 +142,17 @@ header .btn {
 }
 #skills .title {
   font-weight: 700;
+}
+
+.element {
+  background: crimson;
+  transition: background 0.5s ease-in-out;
+}
+
+.element-active {
+  background: red;
+  border-radius: 5%;
+  transition: background 1s ease-out;
 }
 
 #work {
