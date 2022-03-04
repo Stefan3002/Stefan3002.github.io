@@ -78,8 +78,12 @@ body {
   padding: 0;
 }
 
+.navbar {
+  padding: 0;
+}
+
 .nav-item, .navbar-brand {
-  margin: 0.5rem 0.7rem;
+  margin: 0.2rem 0.7rem;
 }
 
 .nav-link, .navbar-brand {
