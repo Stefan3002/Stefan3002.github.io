@@ -22,6 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.centered {
+  text-align: center;
+}
+
 body, html {
   height: 100%;
   width: 100%;
