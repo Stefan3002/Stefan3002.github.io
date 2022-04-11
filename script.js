@@ -54,7 +54,7 @@ function RemoveTypeWriter(i,j,words,word,text,text2,time){
 
 function TypeWriterHelperSkills() {
     const time = 250
-    let words = ["HTML.", "CSS.", "JS.", "Bootstrap.", "SASS.", "React (in progress).", "Python.", "Node (in progress).","SQL (in progress).", "C/C++ (in progress)."]
+    let words = ["HTML.", "CSS.", "JS.", "Bootstrap.", "SASS.", "React (in progress).", "Python.", "Node JS.","MongoDB.", "C/C++ (in progress)."]
     const text = document.querySelector(".typewriter3")
     let i = 0, j = 0
     TypeWriterWordsSkills(j,words,text,time)
