@@ -1,0 +1,82 @@
+$body-font: 'Poppins', sans-serif
+$alt-font: 'Raleway', sans-serif
+$title-font: 'Kanit', sans-serif
+$color1: #0096FF
+$color2: #5800FF
+$bg-color: #72FFFF
+
+hr
+  margin: 0
+  height: 3px
+  background: $color2
+
+.highlighted
+  color: $color2
+  font-weight: bold
+.bolded
+  font-weight: bold
+button
+  background: transparent
+  border: 1px solid $color2
+  border-radius: 15px
+  padding: .7em
+  font-family: $body-font
+  position: relative
+  &::before
+    content: ""
+    background: $color2
+    position: absolute
+    left: 0
+    z-index: -1
+    top: 0
+    width: 0
+    height: 100%
+    border-radius: 15px
+    transition: all .1s ease-in
+  &:hover::before
+    width: 100%
+    transition: all .2s
+
+.underlined
+  text-decoration: underline
+
+.blur
+  background: rgba(0,0,0,.5)
+  position: absolute
+  left: 0
+  right: 0
+  height: 100vh
+  visibility: hidden
+
+.blur-visible
+  visibility: visible
+  animation-name: fade-in
+  animation-duration: .3s
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+
+.highlights-text
+  line-height: 18px
+  position: absolute
+  left: 50%
+  transform: translate(-50%)
+  ul
+    p
+      font-weight: 300
+    .small
+      font-size: 1em
+    list-style-type: none
+    display: flex
+    flex-direction: row
+    li
+      text-align: center
+      margin: 0 2em
+
+.small
+  font-size: .1em
+.soft
+  font-weight: 300

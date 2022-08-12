@@ -1,0 +1,45 @@
+.cards
+  width: 60%
+  margin: 0 auto
+  padding: 5em
+  list-style-type: none
+  display: grid
+  grid-template-columns: 1fr 1fr
+  .card
+    margin: 0 1em
+    width: fit-content
+    border-radius: 10px
+    transition: all .15s ease-out
+    &:hover
+      background: whitesmoke
+      box-shadow: 4px 3px 5px black
+      transition: all .1s ease-in
+    text-align: justify
+    line-height: 20px
+    padding: 2em
+    .card-title
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+
+.life
+  position: relative
+.life-icon
+  width: 100px
+  margin: 0 1em
+
+
+@media screen and (max-width: 1000px)
+  .cards
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@media screen and (min-width: 2000px)
+  .cards
+    width: 40%
+
+@media screen and (min-width: 3000px)
+  .cards
+    width: 30%

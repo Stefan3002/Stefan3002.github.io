@@ -1,0 +1,97 @@
+$color1: #0096FF
+$bg-color: #72FFFF
+$color2: #5800FF
+$title-font: 'Kanit', sans-serif
+$body-font: 'Poppins', sans-serif
+$alt-font: 'Raleway', sans-serif
+header
+  nav
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,.1))
+    width: 100%
+    button
+      color: whitesmoke
+    position: fixed
+    top: 0
+    right: 0
+    padding: 10px
+    color: $color2
+    .fa
+      text-align: center
+    ul
+      list-style-type: none
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      a
+        text-decoration: none
+        color: inherit
+      li
+        margin: 0 10px
+  .side-menu
+    z-index: 5
+    height: 100%
+    background: whitesmoke
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    width: fit-content
+    position: fixed
+    right: 0
+    top: 0
+    padding: 3em
+    margin: 0
+    li
+      transition: all .1s
+      margin: 10px 0
+      &:last-of-type
+        margin: auto 0
+      &:hover
+        opacity: .7
+        transition: all .1s
+    visibility: hidden
+  .visible
+    visibility: visible
+    animation-name: slide-left
+    animation-duration: .7s
+
+.menu-btn
+  color: whitesmoke
+
+
+@keyframes slide-left
+  from
+    transform: translateX(100%)
+  to
+    transform: translateX(0)
+
+
+.page-head
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.7)), linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.1)), url("/Images/Header.jpg")
+  background-size: cover
+  height: 80vh
+  padding: 15em 5em
+  h1
+    font-family: $title-font
+    font-weight: 400
+    margin: 0
+    font-size: 4em
+  h2
+    font-size: 3em
+  p
+    font-size: 1.5em
+  .head-text
+    .big-title
+      font-family: $title-font
+      font-weight: 700
+      margin-top: -.36em
+      margin-left: .3em
+      font-size: 10em
+      opacity: .35
+    padding: 2rem
+    line-height: 15px
+  .highlights-text
+    position: absolute
+    bottom: 0
+    color: whitesmoke
+

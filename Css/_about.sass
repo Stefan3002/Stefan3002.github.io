@@ -1,0 +1,45 @@
+.about
+  //height: 60vh
+  display: grid
+  grid-template-columns: 2fr 1fr
+  grid-template-areas: 'hero aside-top' 'hero aside-bottom'
+  .hero
+    grid-area: hero
+    background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,.3)), url(/Images/12A_2927.jpg)
+    background-size: cover
+    background-position: 50% 20%
+  .aside-top
+    text-align: center
+    grid-area: aside-top
+    padding: 2em
+  .aside-bottom
+    grid-area: aside-bottom
+    padding: 2em
+    background: $color2
+    color: whitesmoke
+    text-align: justify
+    a
+      color: whitesmoke
+      font-size: 1.3em
+      font-family: $alt-font
+      font-weight: 400
+.about2
+  grid-template-columns: 1fr 2fr
+  grid-template-areas: 'aside-top hero' 'aside-bottom hero'
+  .hero2
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3)), url("/Images/Me2.jpg")
+    background-size: cover
+    background-position: 50% 20%
+    grid-area: hero
+  .aside-top2
+    padding: 2em
+    grid-area: aside-top
+    background: $color2
+    color: whitesmoke
+  .aside-bottom2
+    text-align: center
+    padding: 2em
+    grid-area: aside-bottom
+    img
+      width: 100%
+      max-width: 500px

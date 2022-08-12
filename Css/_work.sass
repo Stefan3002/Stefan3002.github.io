@@ -1,0 +1,94 @@
+.projects
+  //height: 70vh
+  width: 90%
+  margin: 0 auto
+  text-align: center
+  .projects-grid
+    margin: 1em 0
+    display: grid
+    grid-template-columns: 2fr 1fr
+    justify-content: center
+  .hero
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      min-width: 300px
+      max-width: 500px
+      border-radius: 15px
+  .aside
+    h2
+      line-height: 10px
+    .highlights-text
+      li
+        h3
+          color: $color2
+        padding: .7em
+        &:hover
+          background: $color2
+          border-radius: 10px
+          transition: all .3s
+          color: whitesmoke
+          h3
+            color: whitesmoke
+      position: relative
+      display: flex
+      justify-content: center
+    padding: 2em
+    text-align: center
+    .projects-cards
+      list-style-type: none
+      display: flex
+      justify-content: center
+      a
+        width: fit-content
+        border-radius: 10px
+        .project
+          width: 9em
+          text-align: center
+          padding: .75em
+          margin: 1em 0
+        &:hover
+          color: whitesmoke
+          background: $color2
+          transition: all .2s
+
+.project-icon
+  width: 75%
+
+@media screen and (max-width: 1450px)
+  .projects
+    .projects-grid
+      display: flex
+      flex-direction: column
+      align-items: center
+
+@media screen and (max-width: 1000px)
+  .projects
+      .aside
+        .projects-cards
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
+
+
+@media screen and (max-width: 700px)
+  .projects
+    width: 100%
+    .aside
+      .projects-cards
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+
+@media screen and (min-width: 2000px)
+  .projects
+    width: 70%
+
+@media screen and (min-width: 2500px)
+  .projects
+    width: 60%
+
+@media screen and (min-width: 3000px)
+  .projects
+    width: 50%

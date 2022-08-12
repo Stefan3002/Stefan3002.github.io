@@ -1,0 +1,60 @@
+.licenses
+  width: 60%
+  margin: 0 auto
+  ul
+    list-style-type: none
+    display: grid
+    grid-template-columns: 1fr 1fr
+    justify-content: center
+    align-items: center
+    li
+      margin: 1em
+
+.license-icon
+  width: 50%
+
+
+.license
+  margin: 0 1em
+  text-align: center
+  position: relative
+  width: fit-content
+  h2
+    padding: .5em
+    color: whitesmoke
+    z-index: 2
+    transition: all .2s
+    background: rgba(0,0,0,.6)
+    border-radius: 5px
+    visibility: hidden
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  img
+    width: 100%
+    max-width: 600px
+    transition: all .2s
+    &:hover
+      transform: scale(1.1)
+      transition: all .2s
+  &:hover h2
+    visibility: visible
+
+
+@media screen and (max-width: 1000px)
+  .licenses
+    ul
+      display: flex
+      flex-direction: column
+      align-items: center
+
+@media screen and (min-width: 2000px)
+  .licenses
+    ul
+      grid-template-columns: repeat(3, 1fr)
+
+@media screen and (min-width: 3000px)
+  .licenses
+    ul
+      grid-template-columns: repeat(4, 1fr)

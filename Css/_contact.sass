@@ -1,0 +1,42 @@
+.contact
+  width: 60%
+  margin: 0 auto
+  margin-bottom: 5em
+  text-align: center
+  ul
+    list-style-type: none
+    display: flex
+    flex-direction: row
+    justify-content: center
+    .form-contact
+      form
+        display: flex
+        flex-direction: column
+  .aside-img
+    padding: 1em
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      width: 100%
+      min-width: 300px
+      max-width: 600px
+  input, textarea
+    margin: 1em
+    padding: 1em
+    border-radius: 5px
+    font-family: $body-font
+    transition: all .1s
+    border: 1px solid black
+    &:hover
+      background: whitesmoke
+      transition: all .1s
+  button
+    margin: 1em
+
+
+@media screen and (max-width: 1000px)
+  .contact
+    .aside-img
+      img
+        display: none
